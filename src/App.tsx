@@ -13,7 +13,7 @@ const App = () => {
       <C.Area>
         <C.Header>Lista de Tarefas</C.Header>
         {list.map((item, index) =>(
-          <ListItem/>
+          <ListItem key={index} item={item}/>
         ))}
       </C.Area>
     </C.Container>
